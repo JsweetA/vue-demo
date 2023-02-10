@@ -11,7 +11,6 @@ const fetchClick = async ()=>{
 
 <template>
   <div>
-    
     <button @click="fetchClick">请求</button>
   </div>
   <HelloWorld msg="Vite + Vue" />
