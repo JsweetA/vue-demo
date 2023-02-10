@@ -1,15 +1,18 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import request from './api/request'
+const fetchClick = async ()=>{
+  const res = await request({
+      url:`/aaa`,
+    });
+}
+
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    
+    <button @click="fetchClick">请求</button>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
