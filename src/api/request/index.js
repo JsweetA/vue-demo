@@ -11,7 +11,6 @@ export const request = ({ url, params, method = 'GET', headers = {}, describe = 
         headers: {
           'content-type': 'application/json',
           accept: '*/*',
-          'satoken': getToken(),
           ...headers,
         },
       })
